@@ -1,5 +1,6 @@
 package es.jotero.starjump
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.*
@@ -11,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity
 import es.jotero.starjump.events.StarJumpEvent
 import es.jotero.starjump.listeners.StarJumpListener
 import java.util.*
-import kotlin.system.exitProcess
 
 class StartActivity : AppCompatActivity(), StarJumpListener {
 
@@ -33,6 +33,7 @@ class StartActivity : AppCompatActivity(), StarJumpListener {
         progressBar.max = goal!!
         progressBar.progress = 0
         initTimer()
+        updateJumpsText()
     }
 
     private fun registerListeners() {
@@ -117,6 +118,7 @@ class StartActivity : AppCompatActivity(), StarJumpListener {
         },0, 1)
     }
 
+    @SuppressLint("SetTextI18n")
     private fun updateTimeText() {
         val timingText = findViewById<TextView>(R.id.textTiming)
         val milliseconds = timing % 1000
@@ -133,7 +135,7 @@ class StartActivity : AppCompatActivity(), StarJumpListener {
         timingText.text = "$minutes:$seconds:$millisecondsString"
     }
 
-    var doubleBackToExitPressedOnce = false
+    private var doubleBackToExitPressedOnce = false
 
     override fun onBackPressed() {
         if (doubleBackToExitPressedOnce) {
@@ -143,10 +145,10 @@ class StartActivity : AppCompatActivity(), StarJumpListener {
             return
         }
 
-        doubleBackToExitPressedOnce = true;
-        Toast.makeText(this, getString(R.string.confirm_back_surrender), Toast.LENGTH_SHORT).show();
+        doubleBackToExitPressedOnce = true
+        Toast.makeText(this, getString(R.string.confirm_back_surrender), Toast.LENGTH_SHORT).show()
 
-        Handler().postDelayed({ doubleBackToExitPressedOnce=false; }, 2000);
+        Handler().postDelayed({ doubleBackToExitPressedOnce=false; }, 2000)
     }
 
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {

@@ -4,6 +4,7 @@
     package="es.jotero.starjump">
 
     <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
     <application
         android:allowBackup="true"
@@ -11,7 +12,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
@@ -30,7 +32,4 @@
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
     </application>
-
-    <uses-permission android:name="android.permission.VIBRATE"/>
-
 </manifest>

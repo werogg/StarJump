@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Star Jump</string>
     <string name="app_title">StarJump exercice</string>
     <string name="app_description">Click the button to start\ncounting your star\njumps</string>
@@ -7,17 +7,16 @@
     <string name="goal">GOAL</string>
     <string name="time">TIME</string>
     <string name="share_the_app_with_your_friends">Share the app with your friends</string>
-    <string name="share_to">Share with</string>
     <string name="share_message">Hey! I\'m using StarJump app (play store) and it\'s amazing! Come and install it.</string>
     <string name="share_with">Share with</string>
-    <string name="whatsapp_not_installed">WhatsApp not installed!</string>
     <string name="error_app_not_installed">Can\'t be shared as you don\'t have this app!</string>
     <string name="jump_help">Please mark each jump well\nso the app can detect it</string>
     <string name="surrender">Surrender</string>
     <string name="set_your_jumps_goal">Set your jumps goal!</string>
-    <string name="congratulations_desc">Congratulations! You reached your goal of\n%1$d jumps in a perfect time of\n%2$dm %3$ds %4$sms</string>
+    <string name="congratulations_desc" tools:ignore="PluralsCandidate">Congratulations! You reached your goal of\n%1$d jumps in a perfect time of\n%2$dm %3$ds %4$sms</string>
     <string name="share_result_with_friends">Share your results</string>
     <string name="go_home_button">Button to go home</string>
     <string name="confirm_back_surrender">Click BACK again to surrender!</string>
-    <string name="share_results_message">Hey! I\'ve just done %1$d star jumps in just %2$d minutes, %3$d seconds and %4$d milliseconds! Can you beat me?     Install StarJump app on play store.</string>
+    <string name="share_results_message" tools:ignore="PluralsCandidate">Hey! I\'ve just done %1$d star jumps in just %2$d minutes, %3$d seconds and %4$d milliseconds! Can you beat me?     Install StarJump app on play store.</string>
+    <string name="home">Home</string>
 </resources>

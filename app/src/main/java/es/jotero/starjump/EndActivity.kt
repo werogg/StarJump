@@ -1,12 +1,9 @@
 package es.jotero.starjump
 
-import android.content.Context
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.os.Build
 import android.os.Bundle
-import android.os.VibrationEffect
-import android.os.Vibrator
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
@@ -16,11 +13,11 @@ import es.jotero.starjump.enums.SharePlatform
 
 class EndActivity : AppCompatActivity() {
 
-    var goal = 0
-    var time : Long = 0
-    var milliseconds : Long = 0
-    var seconds : Long = 0
-    var minutes : Long = 0
+    private var goal = 0
+    private var time : Long = 0
+    private var milliseconds : Long = 0
+    private var seconds : Long = 0
+    private var minutes : Long = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -71,15 +68,12 @@ class EndActivity : AppCompatActivity() {
         share(SharePlatform.FACEBOOK)
     }
 
-    private fun onGoalButtonClicked() {
-        findViewById<SlidingUpPanelLayout>(R.id.sliding_layout).panelState = SlidingUpPanelLayout.PanelState.EXPANDED
-    }
-
     private fun onHomeButtonClicked() {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
 
+    @SuppressLint("SetTextI18n")
     private fun updateTexts() {
         val jumpsText = findViewById<TextView>(R.id.textJumps)
         val timingText = findViewById<TextView>(R.id.textTiming)
@@ -88,9 +82,7 @@ class EndActivity : AppCompatActivity() {
         seconds = (time / 1000) % 60
         minutes = (time / 1000*60) % 60
         //val hours = (timing / 1000*60*60) % 24
-        var millisecondsString = ""
-
-        millisecondsString = when {
+        val millisecondsString = when {
             milliseconds < 10 -> "00$milliseconds"
             milliseconds in 10..99 -> "0$milliseconds"
             else -> "$milliseconds"
@@ -107,12 +99,12 @@ class EndActivity : AppCompatActivity() {
         val message = getString(R.string.share_results_message, goal, minutes, seconds, milliseconds)
         val intent = Intent(Intent.ACTION_SEND)
         val pm = packageManager
-        var packageName = ""
+
         var error = false
 
         intent.type = "text/plain"
 
-        packageName = when (platform) {
+        val packageName = when (platform) {
             SharePlatform.FACEBOOK -> "com.facebook.katana"
             SharePlatform.WHATSAPP -> "com.whatsapp"
             SharePlatform.INSTAGRAM -> "com.instagram.android"
@@ -120,7 +112,7 @@ class EndActivity : AppCompatActivity() {
         }
 
         try {
-            val info = pm.getPackageInfo(packageName, PackageManager.GET_META_DATA)
+            pm.getPackageInfo(packageName, PackageManager.GET_META_DATA)
             intent.setPackage(packageName)
         } catch (exc : PackageManager.NameNotFoundException) {
             Toast.makeText(this, getString(R.string.error_app_not_installed), Toast.LENGTH_SHORT)
