@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Salto de Estrella</string>
+    <string name="app_title">Ejercicio Salto de Estrella</string>
+    <string name="app_description">Haz click al boton para empezar\na contar tus saltos</string>
+    <string name="start_button_cont">Boton de inicio</string>
+    <string name="start">INICIAR</string>
+    <string name="goal">OBJE\n-TIVO</string>
+    <string name="time">TIEMPO</string>
+    <string name="share_the_app_with_your_friends">Comparte la app con tus amigos</string>
+    <string name="share_to">Compartir con</string>
+    <string name="share_message">Hey! Estoy usando StarJump (play store) y es alucinante! Ves e instalatela!</string>
+    <string name="share_with">Compartir con</string>
+    <string name="whatsapp_not_installed">Whatsapp no instalado!</string>
+    <string name="error_app_not_installed">No se puedo compartir ya que no tienes esta aplicación!</string>
+    <string name="jump_help">Porfavor, marca bien cada salto para que la aplicación lo detecte</string>
+    <string name="surrender">Rendirme</string>
+    <string name="set_your_jumps_goal">Establece tu objetivo!</string>
+    <string name="congratulations_desc">Felicidades! Has alcanzado tu objetivo de\n%1$d saltos en un tiempo perfecto de\n%2$dm %3$ds %4$sms</string>
+    <string name="share_result_with_friends">Comparte tus resultados</string>
+    <string name="go_home_button">Boton para ir al inicio</string>
+    <string name="share_results_message">Hey! Acabo de hacer %1$d saltos en estrella en solo %2$d minutos, %3$d segundos y %4$d milisegundos! Puedes vencerme?       Instala StarJump en la play store.</string>
+    <string name="confirm_back_surrender">Haz click ATRAS de nuevo para rendirte!</string>
+</resources>
