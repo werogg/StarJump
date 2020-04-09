@@ -1,4 +1,4 @@
-![Logo](https://i.ibb.co/hMbfXVv/starjumpicon.jpg | width=100)
+<img src="https://i.ibb.co/hMbfXVv/starjumpicon.jpg" width="100" height="100">
 # StarJump - Exercise yourself without a trainer
 This is the complete source code and the build instructions for the [StarJump](https://play.google.com/) app. An exercise app that will count your star jump repetitions for you just by handling the phone in your right hand.
 
