@@ -5,5 +5,7 @@ This is the complete source code and the build instructions for the [StarJump](h
 
 <img src="https://i.ibb.co/rZxFSRB/banner.png" width="270" height="480">
 
+<img src="https://i.ibb.co/g41W9QM/Screenshot-1585958296.png" width="270" height="480">
+
 ![Capture1](https://i.ibb.co/g41W9QM/Screenshot-1585958296.png) ![Capture2](https://i.ibb.co/0q7F2h1/Screenshot-1585958303.png) ![Capture3](https://i.ibb.co/PFNW7qz/Screenshot-1585958308.png) ![Capture4](https://i.ibb.co/BszRTxJ/Screenshot-1585958334.png)
 
