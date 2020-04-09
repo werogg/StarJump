@@ -11,7 +11,7 @@ This is the complete source code and the build instructions for the [StarJump](h
   * Min version: Jelly Bean	4.1.x
   * Target version: Android10	10
  
-## Third partyit
+## Third party
 * kotlin-stdlib-jdk7 1.3.61 [Click](https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.61)
 * buildTools 29.0.3 [Click](https://developer.android.com/studio/releases/build-tools#29.0.3)
 * Androidx appcompat 1.1.0 [Click](https://developer.android.com/jetpack/androidx/releases/appcompat#1.1.0)
