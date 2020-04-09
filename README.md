@@ -1,5 +1,4 @@
-<img src="https://i.ibb.co/hMbfXVv/starjumpicon.jpg" width="100" height="100">
-<img src="https://i.ibb.co/rZxFSRB/banner.png" width="220px" height="auto">
+<img src="https://i.ibb.co/hMbfXVv/starjumpicon.jpg" width="100" height="100"><img src="https://i.ibb.co/rZxFSRB/banner.png" width="220px" height="auto">
 
 # StarJump - Exercise yourself without a trainer
 
