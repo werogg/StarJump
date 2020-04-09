@@ -2,8 +2,7 @@
 # StarJump - Exercise yourself without a trainer
 This is the complete source code and the build instructions for the [StarJump](https://play.google.com/) app. An exercise app that will count your star jump repetitions for you just by handling the phone in your right hand.
 
-
-<img src="https://i.ibb.co/rZxFSRB/banner.png" width="270" height="480">
+![Banner](https://i.ibb.co/rZxFSRB/banner.png)
 
 <img src="https://i.ibb.co/g41W9QM/Screenshot-1585958296.png" width="270" height="480">
 
